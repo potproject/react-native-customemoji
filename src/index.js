@@ -1,1 +1,2 @@
-export default require("./customemoji.js");
+import CustomEmoji from "./customemoji.js";
+export default CustomEmoji;
