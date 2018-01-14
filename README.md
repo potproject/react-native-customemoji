@@ -1,6 +1,6 @@
 # react-native-customemoji
 
-Putting Image inline with TextView for React Native
+Replace <Text> to putting <Image> inline with Text for React Native
 
 `<CustomEmoji>` component for [react-native](http://facebook.github.io/react-native/) Modules.
 
