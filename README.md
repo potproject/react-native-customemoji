@@ -1,6 +1,6 @@
 # react-native-customemoji
 
-Replace <Text> to putting <Image> inline with Text for React Native
+Replace `<Text>` to inline `<Image>` with `<Text>` for React Native
 
 `<CustomEmoji>` component for [react-native](http://facebook.github.io/react-native/) Modules.
 
