@@ -37,7 +37,7 @@ class CustomEmoji extends React.Component {
             style={ this.props.style }
         >
             {
-                this.emojis ? this.parse(this).props.children : this.props.children
+                typeof this.emojis === "object" && Object.keys(this.emojis).length > 0 ? this.parse(this).props.children : this.props.children
             }
         </View>;
     }

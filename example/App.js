@@ -15,7 +15,7 @@ export default class App extends React.Component {
           <Text>Build native :mobile: apps using :javascript: and :react:.</Text>
         </View>
         <View style={styles.container}>
-          <CustomEmoji emojiStyle={{ width: 12, height:12}}  emojis={emojiArray}>
+          <CustomEmoji emojiStyle={{ width: 12, height:12}} emojis={emojiArray}>
             <Text>Welcome to :reactnative:!</Text>
           </CustomEmoji>
             <Text>Build native :mobile: apps using :javascript: and :react:.</Text>
