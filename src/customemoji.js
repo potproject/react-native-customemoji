@@ -3,7 +3,7 @@
  **/
 
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 import InlineImage from "./inlineimage";
 
@@ -69,9 +69,17 @@ class CustomEmoji extends React.Component {
             return component;
         }
         //if emojiStyle is undefined,getting Text fontSize
-        if(this.emojiStyle === defaultEmojiStyle && component.props.style && component.props.style.fontSize){
-            const size = component.props.style.fontSize;
-            this.emojiStyle = { width: size, height:size};
+        if(this.emojiStyle === defaultEmojiStyle && component.props.style){
+            if(typeof component.props.style === 'number') {
+                const thisStyleSheet = StyleSheet.flatten(component.props.style);
+                if(thisStyleSheet.fontSize){
+                    const size = thisStyleSheet.fontSize;
+                    this.emojiStyle = { width: size, height:size};
+                }
+            }else if(component.props.style.fontSize){
+                const size = component.props.style.fontSize;
+                this.emojiStyle = { width: size, height:size};
+            }
         }
         const componentProps = {
 		    ...component.props,
