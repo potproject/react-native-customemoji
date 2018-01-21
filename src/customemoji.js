@@ -8,7 +8,7 @@ import { View, Text } from "react-native";
 import InlineImage from "./inlineimage";
 
 const defaultEmojis = {};
-const defaultEmojiStyle = {};
+const defaultEmojiStyle = {width: 12, height: 12};
 const defaultResponsibleImage = true;
 /**
  *  Emojis Setting 
@@ -67,6 +67,11 @@ class CustomEmoji extends React.Component {
         let text = component.props.children;
         if(typeof text !== "string"){
             return component;
+        }
+        //if emojiStyle is undefined,getting Text fontSize
+        if(this.emojiStyle === defaultEmojiStyle && component.props.style && component.props.style.fontSize){
+            const size = component.props.style.fontSize;
+            this.emojiStyle = { width: size, height:size};
         }
         const componentProps = {
 		    ...component.props,

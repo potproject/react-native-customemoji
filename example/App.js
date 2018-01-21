@@ -11,14 +11,14 @@ export default class App extends React.Component {
     return (
       <View style={styles.view}>
         <View style={styles.container}>
-          <Text>Welcome to :reactnative:!</Text>
-          <Text>Build native :mobile: apps using :javascript: and :react:.</Text>
+          <Text style={styles.largeText}>Welcome to :reactnative:!</Text>
+          <Text style={styles.mediumText}>Build native :mobile: apps using :javascript: and :react:.</Text>
         </View>
         <View style={styles.container}>
-          <CustomEmoji emojiStyle={{ width: 12, height:12}} emojis={emojiArray}>
-            <Text>Welcome to :reactnative:!</Text>
+          <CustomEmoji emojis={emojiArray}>
+            <Text style={styles.largeText}>Welcome to :reactnative:!</Text>
+            <Text style={styles.mediumText}>Build native :mobile: apps using :javascript: and :react:.</Text>
           </CustomEmoji>
-            <Text>Build native :mobile: apps using :javascript: and :react:.</Text>
         </View>
       </View>
     );
@@ -35,4 +35,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  largeText: {
+    fontSize: 20
+  },
+  mediumText: {
+    fontSize: 12
+  }
 });
