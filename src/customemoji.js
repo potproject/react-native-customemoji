@@ -63,7 +63,7 @@ class CustomEmoji extends React.Component {
 	    	return this.parse(child);
 	    }));
     }
-    emojiCheck(component){
+emojiCheck(component){
         let text = component.props.children;
         if(typeof text !== "string"){
             return component;
@@ -89,11 +89,11 @@ class CustomEmoji extends React.Component {
         let lastIndex = 0;
         let elements = [];
         //正規表現は必要ないし、文字列を1文字ずつ処理する独自パーサを作るしかないかな、って感じ
-        for(var nextIndex = 0;nextIndex<text.length;){
+
+        for(var nextIndex = 0;nextIndex<text.length;nextIndex++){
             for(let emoji in this.emojis){
                 if(text.slice(nextIndex,nextIndex+emoji.length) === emoji){
                     if(lastIndex<nextIndex){
-                        //Text
                         elements.push(<Text key={+elements.length}>{text.slice(lastIndex,nextIndex)}</Text>);
                     }
                     //Image
@@ -102,10 +102,8 @@ class CustomEmoji extends React.Component {
                     }else{
                         elements.push(<Image key={elements.length} style={this.emojiStyle} source={this.emojis[emoji]} />);
                     }
-                    lastIndex = nextIndex + emoji.length;
-                    nextIndex = nextIndex + emoji.length;
-                }else{
-                    nextIndex++;
+                    lastIndex = nextIndex;
+                    text = text.slice(0,nextIndex)+text.slice(nextIndex+emoji.length,text.length);
                 }
             }
         }
