@@ -16,9 +16,9 @@ const defaultResponsibleImage = true;
  * 
  *  Example:
  *  {
- *      ":icon:" : require('/react-native/img/favicon.png'),
- *      ":react-native:" : {uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"},
- *      ":blank:" : {uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="},
+ *      "icon" : require('/react-native/img/favicon.png'),
+ *      "reactnative" : {uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"},
+ *      "blank" : {uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="},
  *  }
  */
 
@@ -92,7 +92,7 @@ class CustomEmoji extends React.Component {
 
         for (var nextIndex = 0; nextIndex < text.length; nextIndex++) {
             for (let emoji in this.emojis) {
-                if (text.slice(nextIndex, nextIndex + emoji.length) === emoji) {
+                if (text.slice(nextIndex, nextIndex + emoji.length + 2) === ":"+emoji+":") {
                     if (lastIndex < nextIndex) {
                         elements.push(<Text key={+elements.length}>{text.slice(lastIndex, nextIndex)}</Text>);
                     }
@@ -103,7 +103,7 @@ class CustomEmoji extends React.Component {
                         elements.push(<Image key={elements.length} style={this.emojiStyle} source={this.emojis[emoji]} />);
                     }
                     lastIndex = nextIndex;
-                    text = text.slice(0, nextIndex) + text.slice(nextIndex + emoji.length, text.length);
+                    text = text.slice(0, nextIndex) + text.slice(nextIndex + emoji.length + 2, text.length);
                 }
             }
         }
