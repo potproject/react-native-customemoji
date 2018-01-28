@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "version": "0.1.0",
+  "name": "react-native-customemoji-example",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "jest-expo": "23.0.0",
