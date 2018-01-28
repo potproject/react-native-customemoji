@@ -27,7 +27,7 @@ yarn add react-native-customemoji
 
 ## Examples
 [react-native-customemoji Example App](https://github.com/potproject/react-native-customemoji/tree/master/example)
-```
+```javascript
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import CustomEmoji from "react-native-customemoji";

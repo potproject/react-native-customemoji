@@ -4644,7 +4644,7 @@ react-native-branch@2.0.0-beta.3:
 
 "react-native-customemoji@git://github.com/potproject/react-native-customemoji":
   version "0.0.1"
-  resolved "git://github.com/potproject/react-native-customemoji#1916ffc139b886637d0854863c318f5353af24d6"
+  resolved "git://github.com/potproject/react-native-customemoji#7a27f41f6a469438215653310a331d8f4ea1e47b"
 
 react-native-gesture-handler@1.0.0-alpha.30:
   version "1.0.0-alpha.30"
