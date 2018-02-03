@@ -4,6 +4,7 @@
   "description": "Replace <Text> to putting <Image> inline with TextView for React Native",
   "homepage": "https://github.com/potproject/react-native-customemoji",
   "main": "./src/index.js",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/babel ./src/ --out-file dist/index.js"
