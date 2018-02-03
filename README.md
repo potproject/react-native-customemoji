@@ -4,14 +4,17 @@ Replace `<Text>` to inline `<Image>` with `<Text>` for React Native
 
 `<CustomEmoji>` component for [react-native](http://facebook.github.io/react-native/) Modules.
 
+## ScreenShots
+<div>
+    <img width="270" heigth="480" src="https://github.com/potproject/react-native-customemoji/blob/master/screenshots/ios.png?raw=true">
+</div>
+
 ## Installation
 
 WIP
-<!--```sh
+```sh
 npm i --save react-native-customemoji
-# or
-yarn add react-native-customemoji
-```-->
+```
 
 ## Props
 | name | desc | type | default
@@ -19,11 +22,6 @@ yarn add react-native-customemoji
 | `emojiStyle` | `<Image>` with styles | `Text.propTypes.style` |
 | `emojis` | Emoji URL Defination Arrays | `Array` | `{}`
 |`responsibleImage` | [This issue](https://github.com/facebook/react-native/issues/11906) fixes a bug in React Native with `<Image>` component inside of `<Text>` components. | `bool` | `true`
-
-## ScreenShots
-<div>
-    <img width="270" heigth="480" src="https://github.com/potproject/react-native-customemoji/blob/master/screenshots/ios.png?raw=true">
-</div>
 
 ## Examples
 [react-native-customemoji Example App](https://github.com/potproject/react-native-customemoji/tree/master/example)
