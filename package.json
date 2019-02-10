@@ -1,6 +1,6 @@
 {
   "name": "react-native-customemoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Replace <Text> to putting <Image> inline with TextView for React Native",
   "homepage": "https://github.com/potproject/react-native-customemoji",
   "main": "./src/index.js",
@@ -18,10 +18,5 @@
     "customemoji"
   ],
   "author": "potproject",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-native": "^4.0.0"
-  }
+  "license": "MIT"
 }
