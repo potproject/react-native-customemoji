@@ -1,6 +1,6 @@
 {
   "name": "react-native-customemoji",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Replace <Text> to putting <Image> inline with TextView for React Native",
   "homepage": "https://github.com/potproject/react-native-customemoji",
   "main": "./src/index.js",
