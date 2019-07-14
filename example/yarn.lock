@@ -5392,9 +5392,10 @@ react-native-branch@2.2.5:
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
   integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
 
-"react-native-customemoji@git://github.com/potproject/react-native-customemoji":
-  version "0.0.2"
-  resolved "git://github.com/potproject/react-native-customemoji#da572da75e3b208700a644e1a62f6a39b57a0dca"
+react-native-customemoji@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-customemoji/-/react-native-customemoji-1.0.0.tgz#197559c0af92eca85cfaa2edffcfdb056bd1f6ad"
+  integrity sha512-28WR/u/PrHfzbVe1G4177RoSDNpX7/gevuJSYcUMW7i9CqICvYbQYgM36CudwjTY2DnEgph3ebmULeIfumYkqg==
 
 react-native-gesture-handler@1.0.9:
   version "1.0.9"
@@ -5405,7 +5406,7 @@ react-native-gesture-handler@1.0.9:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
+react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
 
