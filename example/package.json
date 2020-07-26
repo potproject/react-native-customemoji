@@ -1,27 +1,23 @@
 {
   "name": "react-native-customemoji-example",
   "version": "1.0.0",
-  "private": true,
-  "devDependencies": {
-    "babel-preset-expo": "^5.2.0",
-    "jest-expo": "34.0.0",
-    "react-test-renderer": "16.9.0"
-  },
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "eject": "expo eject",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^34.0.4",
-    "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "expo": "~38.0.8",
+    "react": "~16.11.0",
+    "react-dom": "~16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
     "react-native-customemoji": "^1.0.0"
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0"
+  },
+  "private": true
 }

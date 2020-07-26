@@ -14,33 +14,31 @@ const emojiArray = {
   }
 };
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.view}>
-        <View style={styles.container}>
+export default function(){
+  return (
+    <View style={styles.view}>
+      <View style={styles.container}>
+        <Text style={styles.largeText}>Welcome to :reactnative: !</Text>
+        <Text style={styles.mediumText}>
+          Build native :mobile: apps using :javascript: and :react:.
+        </Text>
+      </View>
+      <View style={styles.container}>
+        <CustomEmoji
+          emojis={emojiArray}
+          emojiStyle={{ borderRadius: 5, width: 30, height: 30 }}
+          responsibleImage={false}
+        >
           <Text style={styles.largeText}>Welcome to :reactnative: !</Text>
+        </CustomEmoji>
+        <CustomEmoji emojis={emojiArray} responsibleImage={false}>
           <Text style={styles.mediumText}>
             Build native :mobile: apps using :javascript: and :react:.
           </Text>
-        </View>
-        <View style={styles.container}>
-          <CustomEmoji
-            emojis={emojiArray}
-            emojiStyle={{ borderRadius: 5, width: 30, height: 30 }}
-            responsibleImage={false}
-          >
-            <Text style={styles.largeText}>Welcome to :reactnative: !</Text>
-          </CustomEmoji>
-          <CustomEmoji emojis={emojiArray} responsibleImage={false}>
-            <Text style={styles.mediumText}>
-              Build native :mobile: apps using :javascript: and :react:.
-            </Text>
-          </CustomEmoji>
-        </View>
+        </CustomEmoji>
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
