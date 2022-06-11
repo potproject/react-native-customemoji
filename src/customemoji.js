@@ -87,6 +87,12 @@ class CustomEmoji extends React.Component {
           const size = thisStyleSheet.fontSize;
           this.emojiStyle = { width: size, height: size };
         }
+      } else if (Array.isArray(component.props.style)) {
+        const fontSizeArr = component.props.style.filter(style => typeof style.fontSize === "number");
+        if (fontSizeArr.length > 0) {
+          const size = fontSizeArr[0].fontSize;
+          this.emojiStyle = { width: size, height: size };
+        }
       } else if (component.props.style.fontSize) {
         const size = component.props.style.fontSize;
         this.emojiStyle = { width: size, height: size };
